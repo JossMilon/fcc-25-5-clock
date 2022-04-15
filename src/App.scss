@@ -1,0 +1,95 @@
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@font-face {
+  font-family: "dotMatrix";
+  src: url("./assets/fonts/DOTMATRI.TTF");
+}
+
+.App {
+  font-family: "dotMatrix";
+  width: 100%;
+  margin: 0 100px;
+  background-color: #1F0E1A;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 20px solid #5f5f5f;
+  border-radius: 20px;
+  position: relative;
+  .durationController {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1F0E1A;
+    color: #DC204A;
+    h2 {
+      font-size: 28px;
+    }
+    label {
+      font-size: 75px;
+      margin: 20px 0;
+    }
+    .controls {
+      width: 50%;
+      display: flex;
+      justify-content: space-around;
+      button {
+        width: 30px;
+        width: 30px;
+      }
+    }
+  }
+  .timer {
+    background-color: #1F0E1A;
+    color: #DC204A;
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    h1 {
+      font-size: 45px;
+    }
+    #time-left-2 {
+      font-size: 200px;
+    }
+    .startReset {
+      display: flex;
+      button {
+        width: 100px;
+        margin: 0 10px;
+      }
+    }
+  }
+  button {
+    cursor: pointer;
+    font-family: "dotMatrix";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 38px;
+    background-color: #1F0E1A;
+    border: none;
+    color: #DC204A;
+  }
+  .foot {
+    position: absolute;
+    background-color: #5f5f5f;
+    width: 50px;
+    height: 75px;
+    border-radius: 10px;
+    bottom: -75px;
+  }
+  .left {
+    left: 200px;
+  }
+  .right {
+    right: 200px;
+  }
+}
